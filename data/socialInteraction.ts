@@ -14,7 +14,7 @@ const socialUrl: SocialUrl = {
   bilibili: "https://space.bilibili.com/62832413",
   email: "mailto:895422334@qq.com",
 };
-const socialMediaData: Record<keyof SocialUrl, SocialMedia>= {
+const socialMediaData:Record<keyof SocialUrl, SocialMedia>= {
   github: {
     title: "GitHub",
     url: socialUrl.github,
