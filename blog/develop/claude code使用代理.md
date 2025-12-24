@@ -1,3 +1,11 @@
+---
+title: 如何设计一个可维护的前端架构
+date: 2025-01-01
+---
+
+
+<!-- truncate -->
+
 ## 安装claude-code
 
 npm install -g @anthropic-ai/claude-code
