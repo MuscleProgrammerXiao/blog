@@ -1,20 +1,21 @@
 export type SocialUrl = {
   github: string;
-  x: string;
   bilibili: string;
   email: string;
+  wechat: string;
 };
-export type SocialMedia ={
+export type SocialMedia = {
   title: string;
   url?: string;
-}
-const socialUrl: SocialUrl = {
-  github: "https://github.com/MuscleProgrammerXiao",
-  x: "https://x.com/docusaurus",
-  bilibili: "https://space.bilibili.com/62832413",
-  email: "mailto:895422334@qq.com",
 };
-const socialMediaData:Record<keyof SocialUrl, SocialMedia>= {
+export const socialUrl: SocialUrl = {
+  github: "https://github.com/MuscleProgrammerXiao",
+  bilibili: "https://space.bilibili.com/62832413",
+  email: "895422334@qq.com",
+  wechat: "Neil578633",
+};
+
+const socialMediaData: Record<keyof SocialUrl, SocialMedia> = {
   github: {
     title: "GitHub",
     url: socialUrl.github,
@@ -23,13 +24,14 @@ const socialMediaData:Record<keyof SocialUrl, SocialMedia>= {
     title: "Bilibili",
     url: socialUrl.bilibili,
   },
-  x: {
-    title: "X",
-    url: socialUrl.x,
-  },
   email: {
     title: "Email",
     url: socialUrl.email,
-  }
+  },
+  wechat: {
+    title: "WeChat",
+    url: socialUrl.wechat,
+  },
 };
+
 export default socialMediaData;
