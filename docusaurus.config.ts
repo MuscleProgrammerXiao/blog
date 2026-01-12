@@ -1,7 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-
+import type { GiscusConfig } from './src/components/Comment'
 const Title = "三隻恶犬";
 const config: Config = {
   title: "三隻恶犬",
@@ -83,6 +83,14 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    giscus: {
+      repo: 'MuscleProgrammerXiao/blog',
+      repoId: 'R_kgDOQptTUA',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOQptTUM4C02cn',
+      theme: 'light',
+      darkTheme: 'dark_dimmed',
+    } satisfies Partial<GiscusConfig>,
   } satisfies Preset.ThemeConfig,
   presets: [
     [
