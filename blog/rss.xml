@@ -10,37 +10,6 @@
         <language>zh-CN</language>
         <copyright>Copyright © 2026 Your Name</copyright>
         <item>
-            <title><![CDATA[基于RAG的RPA智能问答开发]]></title>
-            <link>https://lastwhisper.online/blog/rag-rpa-qa</link>
-            <guid>https://lastwhisper.online/blog/rag-rpa-qa</guid>
-            <pubDate>Wed, 21 Jan 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[1. 基础概念认识]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-基础概念认识">1. 基础概念认识<a href="https://lastwhisper.online/blog/rag-rpa-qa#1-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E8%AE%A4%E8%AF%86" class="hash-link" aria-label="1. 基础概念认识的直接链接" title="1. 基础概念认识的直接链接" translate="no">​</a></h3>
-<ol>
-<li class="">RPA（Robotic Process Automation）是指通过软件机器人自动执行重复、规则化的任务。它可以模拟人类的操作，如填写表单、点击按钮、提取数据等，从而提高工作效率和准确性。</li>
-<li class="">RAG（Retrieval-Augmented Generation）是指在生成式模型中，通过检索机制从外部知识库中获取相关信息，以增强模型的生成能力。它通常用于问答系统、对话系统等场景，能够提供更准确、更丰富的回答。</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-目的">2. 目的<a href="https://lastwhisper.online/blog/rag-rpa-qa#2-%E7%9B%AE%E7%9A%84" class="hash-link" aria-label="2. 目的的直接链接" title="2. 目的的直接链接" translate="no">​</a></h3>
-<p>基于RAG开发RPA助手桌面客户端，知识库录入助手使用手册，RPA开发相关的问答与指导，例如：处理助手报错，提供示例demo，插件如何安装，排查问题等。</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3rag较纯llm的优势">3.RAG较纯LLM的优势<a href="https://lastwhisper.online/blog/rag-rpa-qa#3rag%E8%BE%83%E7%BA%AFllm%E7%9A%84%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="3.RAG较纯LLM的优势的直接链接" title="3.RAG较纯LLM的优势的直接链接" translate="no">​</a></h3>
-<ol>
-<li class="">上下文理解能力：RAG能够理解用户的上下文，从而提供更准确的回答。</li>
-<li class="">知识丰富性：RAG可以从外部知识库中获取相关信息，丰富模型的生成能力，而LLM则依赖于模型的内部知识。</li>
-<li class="">可扩展性：RAG可以很容易地扩展到新的知识库，以满足不断变化的需求。</li>
-<li class="">LLM幻觉问题：RAG可以减少LLM的幻觉问题，因为它可以从外部知识库中获取相关信息，而不是依赖于模型的内部知识。</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4rag架构">4.RAG架构<a href="https://lastwhisper.online/blog/rag-rpa-qa#4rag%E6%9E%B6%E6%9E%84" class="hash-link" aria-label="4.RAG架构的直接链接" title="4.RAG架构的直接链接" translate="no">​</a></h3>
-<ol>
-<li class="">数据准备：相关文档准备-文本分割-向量化存储</li>
-<li class="">数据检索：用户输入-向量化表示-相似度计算-文档检索</li>
-<li class="">大模型生成回答：检索到的文档-作为上下文-输入到大模型-生成回答</li>
-</ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5实践">5.实践<a href="https://lastwhisper.online/blog/rag-rpa-qa#5%E5%AE%9E%E8%B7%B5" class="hash-link" aria-label="5.实践的直接链接" title="5.实践的直接链接" translate="no">​</a></h3>]]></content:encoded>
-            <category>技术</category>
-            <category>RPA</category>
-            <category>LLM</category>
-        </item>
-        <item>
             <title><![CDATA[在服务器上部署项目]]></title>
             <link>https://lastwhisper.online/blog/server-deploy-project</link>
             <guid>https://lastwhisper.online/blog/server-deploy-project</guid>
@@ -72,10 +41,47 @@
 <p>各种问题：
 1.端口被占用
 2.防火墙
-3.地址转发错误</p>]]></content:encoded>
+3.地址转发错误</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="博客部署遇到的问题以及解决">博客部署遇到的问题以及解决<a href="https://lastwhisper.online/blog/server-deploy-project#%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3" class="hash-link" aria-label="博客部署遇到的问题以及解决的直接链接" title="博客部署遇到的问题以及解决的直接链接" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1项目问题">1.项目问题<a href="https://lastwhisper.online/blog/server-deploy-project#1%E9%A1%B9%E7%9B%AE%E9%97%AE%E9%A2%98" class="hash-link" aria-label="1.项目问题的直接链接" title="1.项目问题的直接链接" translate="no">​</a></h4>
+<p>站点是基于 Docusaurus 的静态网站。Docusaurus + React + TypeScript</p>
+<ol>
+<li class="">部署到服务器后，网页中的图片加载不出来</li>
+</ol>]]></content:encoded>
             <category>技术</category>
             <category>服务器</category>
             <category>部署</category>
+        </item>
+        <item>
+            <title><![CDATA[基于RAG的RPA智能问答开发]]></title>
+            <link>https://lastwhisper.online/blog/rag-rpa-qa</link>
+            <guid>https://lastwhisper.online/blog/rag-rpa-qa</guid>
+            <pubDate>Wed, 21 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. 基础概念认识]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-基础概念认识">1. 基础概念认识<a href="https://lastwhisper.online/blog/rag-rpa-qa#1-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E8%AE%A4%E8%AF%86" class="hash-link" aria-label="1. 基础概念认识的直接链接" title="1. 基础概念认识的直接链接" translate="no">​</a></h3>
+<ol>
+<li class="">RPA（Robotic Process Automation）是指通过软件机器人自动执行重复、规则化的任务。它可以模拟人类的操作，如填写表单、点击按钮、提取数据等，从而提高工作效率和准确性。</li>
+<li class="">RAG（Retrieval-Augmented Generation）是指在生成式模型中，通过检索机制从外部知识库中获取相关信息，以增强模型的生成能力。它通常用于问答系统、对话系统等场景，能够提供更准确、更丰富的回答。</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-目的">2. 目的<a href="https://lastwhisper.online/blog/rag-rpa-qa#2-%E7%9B%AE%E7%9A%84" class="hash-link" aria-label="2. 目的的直接链接" title="2. 目的的直接链接" translate="no">​</a></h3>
+<p>基于RAG开发RPA助手桌面客户端，知识库录入助手使用手册，RPA开发相关的问答与指导，例如：处理助手报错，提供示例demo，插件如何安装，排查问题等。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3rag较纯llm的优势">3.RAG较纯LLM的优势<a href="https://lastwhisper.online/blog/rag-rpa-qa#3rag%E8%BE%83%E7%BA%AFllm%E7%9A%84%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="3.RAG较纯LLM的优势的直接链接" title="3.RAG较纯LLM的优势的直接链接" translate="no">​</a></h3>
+<ol>
+<li class="">上下文理解能力：RAG能够理解用户的上下文，从而提供更准确的回答。</li>
+<li class="">知识丰富性：RAG可以从外部知识库中获取相关信息，丰富模型的生成能力，而LLM则依赖于模型的内部知识。</li>
+<li class="">可扩展性：RAG可以很容易地扩展到新的知识库，以满足不断变化的需求。</li>
+<li class="">LLM幻觉问题：RAG可以减少LLM的幻觉问题，因为它可以从外部知识库中获取相关信息，而不是依赖于模型的内部知识。</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4rag架构">4.RAG架构<a href="https://lastwhisper.online/blog/rag-rpa-qa#4rag%E6%9E%B6%E6%9E%84" class="hash-link" aria-label="4.RAG架构的直接链接" title="4.RAG架构的直接链接" translate="no">​</a></h3>
+<ol>
+<li class="">数据准备：相关文档准备-文本分割-向量化存储</li>
+<li class="">数据检索：用户输入-向量化表示-相似度计算-文档检索</li>
+<li class="">大模型生成回答：检索到的文档-作为上下文-输入到大模型-生成回答</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5实践">5.实践<a href="https://lastwhisper.online/blog/rag-rpa-qa#5%E5%AE%9E%E8%B7%B5" class="hash-link" aria-label="5.实践的直接链接" title="5.实践的直接链接" translate="no">​</a></h3>]]></content:encoded>
+            <category>技术</category>
+            <category>RPA</category>
+            <category>LLM</category>
         </item>
         <item>
             <title><![CDATA[claude code 使用代理]]></title>
