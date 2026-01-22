@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
 const Hero = () => {
   return (
     <div className="tw-min-h-screen tw-flex tw-items-center tw-justify-center">
@@ -47,7 +49,7 @@ const Hero = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <motion.img
-            src="/svg/halloween-skeleton-03.svg"
+            src={useBaseUrl("/svg/halloween-skeleton-03.svg")}
             alt="decoration"
             className="tw-w-64 tw-h-auto md:tw-w-80 lg:tw-w-96 tw-pointer-events-none "
             initial={{ y: 0 }}
