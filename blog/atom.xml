@@ -53,8 +53,17 @@
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1项目问题">1.项目问题<a href="https://lastwhisper.online/blog/server-deploy-project#1%E9%A1%B9%E7%9B%AE%E9%97%AE%E9%A2%98" class="hash-link" aria-label="1.项目问题的直接链接" title="1.项目问题的直接链接" translate="no">​</a></h4>
 <p>站点是基于 Docusaurus 的静态网站。Docusaurus + React + TypeScript</p>
 <ol>
-<li class="">部署到服务器后，网页中的图片加载不出来</li>
-</ol>]]></content>
+<li class="">
+<p>部署到服务器后，网页中的图片加载不出来</p>
+</li>
+<li class="">
+<p>一个小提醒（关于续期）
+因为我们这次是被迫使用了 DNS 手动验证模式（--manual），这意味着 3 个月后证书到期时，certbot renew 自动续期命令无法自动完成（因为它没法自动去改你的域名解析记录）。</p>
+</li>
+</ol>
+<p>你需要记个日历提醒（比如 2026年4月10日左右），到时候再运行一遍今天这个命令：
+sudo certbot certonly --manual --preferred-challenges dns -d lastwhisper.online -d <a href="http://www.lastwhisper.online/" target="_blank" rel="noopener noreferrer" class="">www.lastwhisper.online</a></p>
+<p>cat /var/log/blog_deploy.log</p>]]></content>
         <category label="技术" term="技术"/>
         <category label="服务器" term="服务器"/>
         <category label="部署" term="部署"/>
