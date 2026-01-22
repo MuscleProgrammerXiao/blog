@@ -9,7 +9,7 @@ export type SocialMedia = {
   url?: string;
 };
 export const socialUrl: SocialUrl = {
-  github: "https://github.com/MuscleProgrammerXiao",
+  github: "https://github.com/LastWhisper2022",
   bilibili: "https://space.bilibili.com/62832413",
   email: "895422334@qq.com",
   wechat: "Neil578633",

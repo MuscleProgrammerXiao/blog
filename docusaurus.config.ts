@@ -6,12 +6,12 @@ const Title = "三隻恶犬";
 const config: Config = {
   title: "三隻恶犬",
   url: "https://lastwhisper.online", //网站域名
-  baseUrl: "/blog/",
+  baseUrl: "/",
   favicon: "svg/favicon.ico",
   organizationName: "MuscleProgrammerXiao",
   projectName: "blog",
   onBrokenLinks: "warn", // throw,warn,ignore
-  plugins: ["./src/plugins/tailwind-config.js"],
+  plugins: [],
   themeConfig: {
     image: "img/docusaurus-social-card.jpg",
     colorMode: {

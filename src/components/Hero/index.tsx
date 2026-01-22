@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="tw-max-w-6xl tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-between tw-gap-10">
         {/* 文字区域 - 左侧（PC） / 上方（Mobile） */}
         <motion.div
-          className="tw-flex-1 tw-text-center md:tw-text-left"
+          className="tw-flex-1 tw-text-center md:tw-text-left tw-relative tw-z-10"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
@@ -43,7 +43,7 @@ const Hero = () => {
 
         {/* 装饰 SVG - 右侧（PC） / 下方（Mobile） */}
         <motion.div
-          className="tw-flex-1 tw-flex tw-justify-center"
+          className="tw-flex-1 tw-flex tw-justify-center tw-relative tw-z-0"
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}

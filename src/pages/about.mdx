@@ -11,44 +11,53 @@ import Comment from '@site/src/components/Comment'
 <div className="tw-flex tw-flex-col tw-items-center tw-justify-center tw-py-16 tw-px-4">
 
 # 👋 你好! 我是 xiao
+关于生活积极向上，关于编程唧唧歪歪
+<div className='tw-w-1/2'> 
+**关于我：{new Date().getFullYear() - 2020}年+** 前端程序员，喜欢健身，跑步，游泳，冲浪，喝酒吹牛逼。你问我编程我可能支支吾吾，但你要问我什么好玩我可能滔滔不绝。
+</div>
 
-**当前职业：{new Date().getFullYear() - 2020}年+** web前端开发
-
-## 🐶🐶🐶 关于本站
-
+<div className='tw-w-1/2'>
+**关于本站：** 建站初衷说来惭愧，就是想换份有意思的工作。写点内耗的编程文章，放几个项目。网站弄好后，我直面内心，发现我还有一个爱好，那就是爱和有意思的人吹牛逼，
+所以我希望大伙儿可以畅所欲言，调侃也好，发泄也罢。**让兄弟知道你tm也不简单🐶**
+</div>
+## 🐶🐶🐶 
 <p>
-记录，分享，讨论趣事
-
-当前坐标 📍：**深圳**，欢迎交流
-
+当前坐标 📍：**深圳**，欢迎交流，掰手腕💪赢我请你吃饭
 </p>
 
-## 📫 联系我
+<div className="tw-flex tw-items-center tw-justify-center tw-gap-8 tw-mt-4 tw-mb-12">
+  {/* 微信 - 悬停显示微信号 */}
+  <div className="tw-relative tw-group tw-cursor-pointer">
+    <div className="tw-w-12 tw-h-12 tw-flex tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 dark:tw-bg-gray-800 tw-transition-all tw-duration-300 group-hover:tw-scale-110 group-hover:tw-bg-green-100 dark:group-hover:tw-bg-green-900 group-hover:tw-shadow-lg">
+      <Icon icon="ri:wechat-2-line" className="tw-w-6 tw-h-6 tw-text-gray-600 dark:tw-text-gray-300 group-hover:tw-text-green-600 dark:group-hover:tw-text-green-400" />
+    </div>
+    {/* Tooltip */}
+    <div className="tw-absolute tw-bottom-full tw-left-1/2 -tw-translate-x-1/2 tw-mb-3 tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-white tw-bg-gray-900 tw-rounded-lg tw-shadow-xl tw-opacity-0 tw-invisible tw-translate-y-2 group-hover:tw-translate-y-0 group-hover:tw-opacity-100 group-hover:tw-visible tw-transition-all tw-duration-300 tw-whitespace-nowrap tw-z-50">
+      {socialMediaData.wechat.url}
+      <div className="tw-absolute tw-top-full tw-left-1/2 -tw-translate-x-1/2 tw-border-4 tw-border-transparent tw-border-t-gray-900"></div>
+    </div>
+  </div>
 
-<p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-  <Icon icon="ri:wechat-2-line" width="20" height="20" />
-  <span>{socialMediaData.wechat.url}</span>
-</p>
+  {/* GitHub */}
+  <a 
+    href={socialMediaData.github.url} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="tw-group tw-w-12 tw-h-12 tw-flex tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 dark:tw-bg-gray-800 tw-transition-all tw-duration-300 hover:tw-scale-110 hover:tw-bg-gray-200 dark:hover:tw-bg-gray-700 hover:tw-shadow-lg"
+  >
+    <Icon icon="ri:github-line" className="tw-w-6 tw-h-6 tw-text-gray-600 dark:tw-text-gray-300 group-hover:tw-text-black dark:group-hover:tw-text-white" />
+  </a>
 
-```
-🟧🟧🟧🟧🟧🟧🟧🟧⬛️⬛️🟧🟧🟧🟧🟧🟧🟧
-🟧🟧🟧🟧🟧🟧🟧🟧⬛️🟩🟧🟧🟧🟧🟧🟧🟧
-🟧🟧🟧🟧🟧🟧🟧🟧⬛️🟧🟧🟧🟧🟧🟧🟧🟧
-🟧🟧🟧🟧⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟧🟧🟧🟧
-🟧🟧🟧⬛️⬜️⬜️⬜️⬛️🟩⬛️⬜️⬜️⬜️⬛️🟧🟧🟧
-🟧🟧⬛️⬜️⬜️⬜️⬜️⬜️⬛️⬜️⬜️⬜️⬜️⬜️⬛️🟧🟧
-🟧🟧⬛️⬜️⬜️⬜️⬛️⬛️🟩⬛️⬛️⬜️⬜️⬜️⬛️🟧🟧
-🟧🟧⬛️⬜️⬜️⬜️⬛️⬛️🟩⬛️⬛️⬜️⬜️⬜️⬛️🟧🟧
-🟧🟧⬛️⬜️⬜️⬜️⬜️⬜️⬛️⬜️⬜️⬜️⬜️⬜️⬛️🟧🟧
-🟧⬛️🟩⬛️⬜️⬜️⬜️⬛️🟩⬛️⬜️⬜️⬜️⬛️🟩⬛️🟧
-🟧⬛️⬛️🟩⬛️⬛️⬛️🟩🟩🟩⬛️⬛️⬛️🟩⬛️⬛️🟧
-🟧⬛️⬜️⬛️🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛️⬜️⬛️🟧
-🟧⬛️⬜️⬜️⬛️⬛️🟩🟩🟩🟩⬛️⬛️⬛️⬜️⬜️⬛️🟧
-🟧⬛️🟩🟩🟩⬜️⬛️⬛️⬛️⬛️⬛️⬜️🟩🟩🟩⬛️🟧
-🟧⬛️🟩🟩🟩⬜️⬜️🟩🟩🟩⬜️⬜️🟩🟩🟩⬛️🟧
-⬛️🟩🟩⬛️🟩⬛️🟩🟩🟩🟩🟩⬛️🟩⬛️🟩🟩⬛️
-⬛️⬛️⬛️⬛️🟩⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟩⬛️⬛️⬛️⬛️
-🟧🟧🟧⬛️⬛️⬛️🟧🟧🟧🟧🟧⬛️⬛️⬛️🟧🟧🟧
-```
+  {/* Bilibili */}
+  <a 
+    href={socialMediaData.bilibili.url} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="tw-group tw-w-12 tw-h-12 tw-flex tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 dark:tw-bg-gray-800 tw-transition-all tw-duration-300 hover:tw-scale-110 hover:tw-bg-blue-100 dark:hover:tw-bg-blue-900 hover:tw-shadow-lg"
+  >
+    <Icon icon="ri:bilibili-line" className="tw-w-6 tw-h-6 tw-text-gray-600 dark:tw-text-gray-300 group-hover:tw-text-blue-500 dark:group-hover:tw-text-blue-400" />
+  </a>
+</div>
+
 <Comment />
 </div>

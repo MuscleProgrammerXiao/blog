@@ -1,7 +1,8 @@
 // tailwind.config.js
 module.exports = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',
+    './src/**/*.{js,jsx,ts,tsx,mdx}',
+    './blog/**/*.md',
     './docs/**/*.mdx', // Docusaurus 的 MDX 文件路径
   ],
   theme: { extend: {} },
