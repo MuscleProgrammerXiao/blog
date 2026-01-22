@@ -120,9 +120,6 @@ export ANTHROPIC_AUTH_TOKEN="sk-c0e7fed7b-你的自定义Key"
     "editor.fontSize": 18,
     "claudeCode.preferredLocation": "panel",
     "claudeCode.environmentVariables": [
-        
-
-        
         {
             "name": "ANTHROPIC_BASE_URL",
             "value": "http://127.0.0.1:3456/"
