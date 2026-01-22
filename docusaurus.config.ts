@@ -6,7 +6,7 @@ const Title = "三隻恶犬";
 const config: Config = {
   title: "三隻恶犬",
   url: "https://lastwhisper.online", //网站域名
-  baseUrl: "/",
+  baseUrl: "/blog",
   favicon: "svg/favicon.ico",
   organizationName: "MuscleProgrammerXiao",
   projectName: "blog",
