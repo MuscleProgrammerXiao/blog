@@ -5,49 +5,42 @@ hide_table_of_contents: false
 ---
 
 import { Icon } from "@iconify/react";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import ImagePreview from "@site/src/components/ImagePreview";
 
-# 隻恶博客设计
+# 个人博客 - 隻恶  
 
 <div className="tw-flex tw-gap-4 tw-mb-8">
   <a 
-    href="https://github.com/MuscleProgrammerXiao/blog" 
+    href="https://github.com/LastWhisper2022/blog" 
     target="_blank"
-    className="tw-flex tw-items-center tw-gap-2 tw-px-4 tw-py-2 tw-bg-gray-900 tw-text-white tw-rounded-lg tw-font-medium hover:tw-bg-gray-700 hover:tw-text-white tw-transition-colors no-underline"
+    className="tw-flex tw-items-center tw-gap-2 tw-px-2  tw-bg-gray-900 tw-text-white tw-rounded-lg tw-font-medium hover:tw-bg-gray-700 hover:tw-text-white tw-transition-colors no-underline"
   >
     <Icon icon="ri:github-fill" className="tw-w-5 tw-h-5" />
-    GitHub 仓库
+    <p className="tw-my-0">GitHub 仓库</p>
   </a>
   <a 
-    href="/" 
+    href="https://lastwhisper.online/" 
     target="_blank"
     className="tw-flex tw-items-center tw-gap-2 tw-px-4 tw-py-2 tw-bg-ink-600 tw-text-white tw-rounded-lg tw-font-medium hover:tw-bg-ink-700 hover:tw-text-white tw-transition-colors no-underline"
   >
     <Icon icon="ri:global-line" className="tw-w-5 tw-h-5" />
-    在线预览
+    <p className="tw-my-0">在线预览</p>
   </a>
 </div>
 
-## 🎨 设计理念
+## 🍋 设计理念
 
 本博客采用了 **"内容优先"** 的极简设计风格，结合了 **Docusaurus** 强大的文档管理能力和 **TailwindCSS** 的灵活样式定制。
+“隻恶” 其实是 “三隻恶犬”，为了保持莫名其妙的神秘感，所以删了两个字，“三隻恶犬”是我在毕业后工作第一天晚上做的一个噩梦，被三只恶犬追着咬了一晚上，记忆深刻 🙂。
 
-### 核心特性
-
-1.  **响应式设计**：完美适配移动端、平板和桌面端，特别优化了移动端的导航交互。
-2.  **暗黑模式**：基于系统偏好自动切换，精心调配了深色模式下的对比度，保护视力。
-3.  **交互细节**：
-    *   首页 Project Ticker 无限滚动效果
-    *   作品列表页的 Bento Grid 布局
-    *   按钮和卡片的微交互动画
-
-## 🛠️ 技术实现
+## 🍋 技术实现
 
 ### 1. 架构选择
 选择 Docusaurus 是因为它开箱即用，内置了：
 *   React 18 + TypeScript
 *   MDX 支持
 *   SEO 优化
-*   i18n 国际化支持
 
 ### 2. 样式定制
 虽然 Docusaurus 默认使用 Infima 样式库，但我引入了 TailwindCSS 来处理更复杂的自定义布局。
@@ -73,21 +66,19 @@ module.exports = {
 ### 3. 本地搜索
 集成了 `@easyops-cn/docusaurus-search-local`，实现了离线全文检索功能，支持中英文分词。
 
-## 📸 页面展示
+## 🍋 页面展示
 
 <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-4 tw-my-8">
   <div className="tw-rounded-xl tw-overflow-hidden tw-border tw-border-gray-200 dark:tw-border-gray-800">
-    <img src="/img/docusaurus-social-card.jpg" alt="Home Page" className="tw-w-full tw-h-auto tw-object-cover" />
-    <p className="tw-p-2 tw-text-center tw-text-sm tw-text-gray-500">首页设计</p>
+      <ImagePreview src={useBaseUrl("/projects/blog/hero.png")} alt="Home Page" className="tw-w-full tw-h-auto tw-object-cover" />
+      <p className="tw-p-2 tw-text-center tw-text-sm tw-text-gray-500">个人主页</p>
   </div>
   <div className="tw-rounded-xl tw-overflow-hidden tw-border tw-border-gray-200 dark:tw-border-gray-800">
-    <img src="/img/docusaurus-social-card.jpg" alt="Blog Post" className="tw-w-full tw-h-auto tw-object-cover" />
-    <p className="tw-p-2 tw-text-center tw-text-sm tw-text-gray-500">文章阅读体验</p>
+    <ImagePreview src={useBaseUrl("/projects/blog/project.png")} alt="Home Page" className="tw-w-full tw-h-auto tw-object-cover" />
+    <p className="tw-p-2 tw-text-center tw-text-sm tw-text-gray-500">作品页</p>
   </div>
 </div>
 
-## 📅 后续规划
+## 🍋 后续规划
+由于时间有限，当前只搭建了一个毛坯，离我心中的个人网站相差相差还挺大的。后续会持续更新模块，内容文章也会持续更新。。。
 
-- [ ] 集成 Giscus 评论系统
-- [ ] 增加 RSS 订阅功能
-- [ ] 优化首屏加载速度
